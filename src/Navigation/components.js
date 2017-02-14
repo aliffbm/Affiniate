@@ -4,8 +4,8 @@
 //import NavContent from './nav';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../public/css/bootstrap.css';
-import '../public/css/bootstrap-theme.css';
+import '../../public/css/bootstrap.css';
+import '../../public/css/bootstrap-theme.css';
 
 
 import NavContent from './nav';
