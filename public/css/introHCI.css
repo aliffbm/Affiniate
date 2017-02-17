@@ -1,35 +1,34 @@
-/* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
+div, p, html, body{
+	margin: 0;
+	padding: 0;
 }
 
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
+.navbarColor{
+
+     background-color: #4a62d6 !important;
+     color: #ffffff;
+}
+#brand {
+     color: #ffffff;
+}
+.navbar-default-override{
+     background-color: #00afab !important;
+}
+.navbarColor div.container{
+
+     background-color: #00afab !important;
+     color: #ffffff;
 }
 
-.jumbotron {
-	position: relative;
-	background: none;
+#root nav div.container{
+
+     background-color: #00afab !important;
+     color: #ffffff;
+
 }
 
-.jumbotron:after {
-     content:"";
-     background: url("../images/lorempixel.jumbotron.jpeg");
-     opacity: 0.2;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     position: absolute;
-     z-index: -1;	
-}
+#makeWhite{
 
-.jumbotron p {
-     color: #6e6e6e;
-}
+     color: white;
 
-.project a {
-     text-align: center;
 }

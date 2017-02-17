@@ -3,11 +3,11 @@ import React from 'react';
 import '../../public/css/bootstrap.css';
 import '../../public/css/bootstrap-theme.css';
 import '../../public/css/introHCI.css';
-import {Link} from 'react-router';
+
 import {Navbar, MenuItem, Nav, NavItem, NavDropdown} from 'react-bootstrap/';
 
 
-export default class UserNavigation extends React.Component{
+export default class WelcomeNavigation extends React.Component{
   handleSelect(e){
   console.log(e);
 }
@@ -23,18 +23,11 @@ render(){
                 </Navbar.Header>
                 <Navbar.Collapse className="navbarColor">
                   <Nav onSelect={this.handleSelect}>
-                    <NavItem className="navbarColor" eventKey={1} href="#"><Link to="home" id="makeWhite">Home</Link></NavItem>
-                    <NavItem className="navbarColor" eventKey={2} href="#"><Link to="chores" id="makeWhite">Chores</Link></NavItem>
-                    <NavDropdown eventKey={3} title="Dropdown" id="makeWhite" className="navbarColor">
-                      <MenuItem className="navbarColor" id="makeWhite" eventKey={3.1}>Action</MenuItem>
-                      <MenuItem className="navbarColor" id="makeWhite" eventKey={3.2}>Another action</MenuItem>
-                      <MenuItem className="navbarColor" id="makeWhite" eventKey={3.3}>Something else here</MenuItem>
-                     
-                      
-                    </NavDropdown>
+                  
                   </Nav>
                   <Nav pullRight className="navbarColor">
-                    <NavItem eventKey={2} id="makeWhite" href="#"><span className="glyphicon glyphicon-log-in"></span> Log Out</NavItem>
+                    <NavItem eventKey={1} id="makeWhite" href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</NavItem>
+                    <NavItem eventKey={2} id="makeWhite" href="#"><span className="glyphicon glyphicon-log-in" ></span> Log In</NavItem>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>

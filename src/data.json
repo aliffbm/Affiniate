@@ -1,0 +1,86 @@
+
+	[
+		 {
+			"teammates": [
+				{
+					"name": "Aliff",
+					"currentChore": "Dishes"
+				},
+				{
+					"name": "Belal",
+					"currentChore": "Vaccuming"
+				},
+				{
+					"name": "Zack",
+					"currentChore": "Trash"
+				},
+				{
+					"name": "Esteban",
+					"currentChore": "Mopping"
+				}
+			]
+		},
+
+		{
+			"chores": [
+				{
+					"name": "Dishes",
+					"expectedTime": "30 min"
+				},
+				{
+					"name": "Trash",
+					"expectedTime": "10 min"
+				},
+				{
+					"name": "Vacuuming",
+					"expectedTime": "45 min"
+				},
+				{
+					"name": "Mopping",
+					"expectedTime": "1 hr"
+				}
+			]
+		},
+
+		{
+			"utilities": [
+				{
+					"name": "Shower"
+				},
+				{
+					"name": "Washing and Drying Machines"
+				},
+				{
+					"name": "Oven"
+				},
+				{
+					"name": "TV"
+				}
+			]
+		},
+
+		{
+			"emotions": [
+				{
+					"name": "Happy",
+					"imageDir": "images/happy.jpg",
+					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Emoji_with_Eyes_Opened_large.png?v=1480481056"
+				},
+				{
+					"name": "Neutral",
+					"imageDir": "images/neutral.jpg",
+					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/files/Expressionless_Face_Emoji.png?9898922749706957214"
+				},
+				{
+					"name": "Worried",
+					"imageDir": "images/worried.jpg",
+					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/files/Worried_Face_Emoji.png?9898922749706957214"
+				},
+				{
+					"name": "Disappointed",
+					"imageDir": "images/disappointed.jpg",
+					"imageURL": "http://www.magic-emoji.com/emoji/images/1146_emoji_iphone_slightly_frowning_face.png"
+				}
+			]
+		}
+	]
