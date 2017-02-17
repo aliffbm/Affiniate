@@ -19,7 +19,7 @@ export default class WelcomeNavigation extends React.Component{
 render(){
   return (<div>
             <Navbar className="navbar-fixed-top" fluid id="navbar-default-override" collapseOnSelect >
-                <Navbar.Header className="navbarColor">
+                <Navbar.Header className="navbarColor" id="navHeaderLeft">
                   <Navbar.Toggle className="pull-left navbarColor"/>
                    <Navbar.Brand className="navbarColor">
                     <a id="brand" href="#">AFFINIATE</a>
@@ -29,7 +29,7 @@ render(){
                   <Nav onSelect={this.handleSelect}>
                   
                   </Nav>
-                  <Nav pullRight className="navbarColor">
+                  <Nav pullRight className="navbarColor" id="navHeaderRight">
                     <NavItem eventKey={1} id="makeWhite" href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</NavItem>
                     <NavItem eventKey={2} id="makeWhite" href="#" onClick={this.__handleClick.bind(this)}><span className="glyphicon glyphicon-log-in"></span> Log In</NavItem>
                   </Nav>
