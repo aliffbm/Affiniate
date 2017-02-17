@@ -1,18 +1,51 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import ReactDom from 'react-dom';
+//import logo from './logo.svg';
 import './App.css';
 
+import {Link} from 'react-router';
+//import Header from './header.js';
+//import navi from './Navigation/nav.js';
+import UserNavigation from './Navigation/nav.js';
+import WelcomeNavigation from './Navigation/navWelcomPage.js';
+import LogInOverLay from './pages/loginOverLay.js';
+
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      login: false
+    }
+
+  }
+
+  changeLoginState(login){
+    this.setState({login: {login}});
+  }
+
+
+
   render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to Rt</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+    let navPage;
+    let brand;
+
+     if(!this.state.login){
+      navPage =<div> <WelcomeNavigation showLogin=""/>
+      <LogInOverLay changeLoginState={this.changeLoginState.bind(this)}/></div>;
+    
+    }else{
+      navPage = <UserNavigation/>;
+    }
+   
+
+    return (<div>
+     {navPage}
+      {this.props.children}
+      
+
+
+
+
       </div>
     );
   }

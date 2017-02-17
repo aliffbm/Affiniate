@@ -10,4 +10,5 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// add any functionality and listeners you want here
+	document.getElementById("navbar-default-override").classList.remove(".navbar-default");
 }
