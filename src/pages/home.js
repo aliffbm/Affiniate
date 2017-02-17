@@ -7,7 +7,7 @@ render(){
 	return(
 
 
-		<div><h1><br>Welcome Home!!</h1></div>
+		<div><h1>Welcome Home!!</h1></div>
 
 		);
 
