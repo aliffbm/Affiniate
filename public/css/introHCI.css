@@ -1,6 +1,18 @@
-div, p, html, body{
+div, p, html{
 	margin: 0;
 	padding: 0;
+}
+
+
+
+body, #root{
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     bottom: 0px;
+     left: 0px;
+     padding: 20px;
+
 }
 
 .navbarColor{
@@ -8,11 +20,20 @@ div, p, html, body{
      background-color: #4a62d6 !important;
      color: #ffffff;
 }
+#navHeaderLeft{
+     margin-left: 20px;
+}
+#navHeaderRight{
+     margin-right: 20px;
+     padding-right: 20px;
+}
 #brand {
      color: #ffffff;
 }
-.navbar-default-override{
+#navbar-default-override{
      background-color: #00afab !important;
+     margin-bottom: 0px;
+
 }
 .navbarColor div.container{
 
@@ -24,6 +45,7 @@ div, p, html, body{
 
      background-color: #00afab !important;
      color: #ffffff;
+     margin-bottom: 0px;
 
 }
 
@@ -31,4 +53,59 @@ div, p, html, body{
 
      color: white;
 
+}
+
+#imgBrand{
+     background-image: url(../images/gear.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     bottom: 0px;
+     right: 0px;
+     min-height: 870px;
+}
+
+#logInOL{
+     position: relative;
+     margin: auto;
+     top: 200px;
+     z-index: 100000;
+     padding: 80px;
+     padding-left: 0px;
+     background-color: black;
+     opacity: .9;
+     border-radius: 50px;
+}
+
+#footer{
+
+     background-color: black;
+     background-size: cover;
+     position: absolute;
+  
+     right: 0px;
+     bottom: 0px;
+     left: 0px;
+}
+
+#bodySectionHeader{
+     padding-top: 100px;
+     background-color: #ffffff;
+     opacity: .4;
+     position: fixed;
+     bottom: 0px;
+     right: 0px;
+     left: 0px;
+     top: 0px;
+     background-size:cover;
+}
+
+#choreContainer{
+    
+     margin-top: 80px;
+    
 }

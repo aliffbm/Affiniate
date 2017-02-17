@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import {Button, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox} from 'react-bootstrap/';
-
+import '../../public/css/introHCI.css';
 export default class LogInOverLay extends React.Component{
 	handleLogin(e){
 		alert("You're Logged In!!!");
 		this.props.changeLoginState(true);
+    this.props.showLogin(false);
+
     
 	}
 	
@@ -13,7 +15,7 @@ export default class LogInOverLay extends React.Component{
   render() {
   
 
-    return (<div className="container">
+    return (<div className="container" id="logInOL">
     	<Form horizontal action="/login" onSubmit={this.handleLogin.bind(this)}>
     		<FormGroup controlId="formHorizontalEmail">
     			<Col componentClass={ControlLabel} sm={2}>

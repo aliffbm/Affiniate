@@ -2,21 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../public/css/bootstrap.css';
 import '../public/css/bootstrap-theme.css';
-<<<<<<< HEAD
 import navbarInstance from './Navigation/nav.js';
-import Chores from './chores/chores.js';
 import './index';
 
-var Index = React.createClass({
+/*var Index = React.createClass({
   render(){
     return <div>
       <Chores/>
     </div>;
   }
 });
+*/
 
-ReactDOM.render(<Index />, document.querySelector('main'));
-=======
 //import $ from 'jquery';
 
 //import navbarInstance from './Navigation/nav.js';
@@ -38,6 +35,7 @@ import brand from './pages/brand.js';
 
 
 
+
 //console.log(data);
 ReactDOM.render(  <Router history={hashHistory}>
   	<Route path="/" component={App}>
@@ -49,4 +47,4 @@ ReactDOM.render(  <Router history={hashHistory}>
 ,
   document.getElementById('root')
 );
->>>>>>> 0f8e27d238112b371fc9d1ee9197adf1ad70e6ca
+

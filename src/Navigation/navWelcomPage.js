@@ -11,10 +11,14 @@ export default class WelcomeNavigation extends React.Component{
   handleSelect(e){
   console.log(e);
 }
+  
+  __handleClick(){
+     this.props.showLogin(true);
+  }
 
 render(){
   return (<div>
-            <Navbar fluid id="navbar-default-override" collapseOnSelect >
+            <Navbar className="navbar-fixed-top" fluid id="navbar-default-override" collapseOnSelect >
                 <Navbar.Header className="navbarColor">
                   <Navbar.Toggle className="pull-left navbarColor"/>
                    <Navbar.Brand className="navbarColor">
@@ -27,7 +31,7 @@ render(){
                   </Nav>
                   <Nav pullRight className="navbarColor">
                     <NavItem eventKey={1} id="makeWhite" href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</NavItem>
-                    <NavItem eventKey={2} id="makeWhite" href="#"><span className="glyphicon glyphicon-log-in" ></span> Log In</NavItem>
+                    <NavItem eventKey={2} id="makeWhite" href="#" onClick={this.__handleClick.bind(this)}><span className="glyphicon glyphicon-log-in"></span> Log In</NavItem>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>
