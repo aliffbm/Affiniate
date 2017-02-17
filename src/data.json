@@ -23,25 +23,30 @@
 		{
 			"chores": [
 				{
+					"key": 1,
 					"name": "Dishes",
 					"expectedTime": "30 min",
-					"Image": "images/sink.jpg"
+					"Image": "images/sink.jpg",
+					"handler": "'this.handle1.bind(this)'"
 				},
-				{
+				{	"key": 2,
 					"name": "Trash",
 					"expectedTime": "10 min",
-					"Image": "images/happy.png"
+					"Image": "images/happy.png",
+					"handler": "'this.handle2.bind(this)'"
 
 				},
 				{
 					"name": "Vacuuming",
 					"expectedTime": "45 min",
-					"Image": "images/shower.jpg"
+					"Image": "images/shower.jpg",
+					"handler": "this.handle3.bind(this)"
 				},
 				{
 					"name": "Mopping",
 					"expectedTime": "1 hr",
-					"Image": "images/laundry.jpg"
+					"Image": "images/laundry.jpg",
+					"handler": "this.handle4.bind(this)"
 				}
 			]
 		},

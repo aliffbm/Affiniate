@@ -4,7 +4,8 @@ import '../../public/css/bootstrap.css';
 import '../../public/css/bootstrap-theme.css';
 import '../../public/css/chores.css'
 import Draggable from 'react-draggable';
-import data from '../data.json'
+import data from '../data.json';
+import $ from 'jquery';
 
 var divStyle;
 console.log(data[1].chores[0].Image);
@@ -28,7 +29,8 @@ export default class Chores extends React.Component {
       controlledPosition: {
         x: -400,
         y: 200
-      }
+      },
+      clicked: false
     };
 
     this._bind("handleDrag");
@@ -102,13 +104,27 @@ export default class Chores extends React.Component {
       }
     });
   }
+
+  handleN(){
+
+    alert("Neutral!!!");
+  }
   
-  ReturnHandleClick(){
-    
+  __handleClick(){
+    console.log("Handle clicked");
+    console.log(this.props.children);
+    //console.log(data[4].emotions.length);
+   
+   
+     $("#choreContainer").append('<h1 id="chooseFeeling"><ul><li><a href="#" onClick={this.handleN.bind(this)}>Happy</a></li><li><a href="#">Dissappointed</a></li><li><a href="#">Worried</a></li><li><a href="#">Neutral</a></li></ul></h1>');
   }
   render() {
     var choreElementBox = [];
-    var j;
+    let j;
+    if(this.state.clicked){
+      alert("It worked?");
+      j = <div>Did it work?</div>;
+    }
 
     for(var i=0; i<data[1].chores.length;i++){
       var str = JSON.stringify(data[1].chores[i].Image);
@@ -134,9 +150,11 @@ export default class Chores extends React.Component {
       onStop: this.onStop
     };
 
-    console.log(dragHandlers);
-    return ( <div id="choreContainer">
+  
+    return ( <div id="choreContainer" onClick={this.__handleClick.bind(this)}>
+    {j}
     {choreElementBox}</div>
     );
+
   }
 }
