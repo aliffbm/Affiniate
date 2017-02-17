@@ -19,6 +19,7 @@ const navbarInstance = (
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav className="pull-left">
+        <NavItem eventKey={0} href="#">Add Roommate</NavItem>
         <NavItem eventKey={1} href="#">Home</NavItem>
         <NavItem eventKey={2} href="#">Groups</NavItem>
         <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
