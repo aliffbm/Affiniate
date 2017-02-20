@@ -6,7 +6,7 @@ export default class LogInOverLay extends React.Component{
 	handleLogin(e){
 		alert("You're Logged In!!!");
 		this.props.changeLoginState(true);
-    this.props.showLogin(false);
+    this.props.showLogin();
 
     
 	}

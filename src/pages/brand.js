@@ -4,11 +4,7 @@ import {Button, Form, FormGroup, Col, ControlLabel, FormControl, Checkbox} from 
 import '../../public/css/introHCI.css';
 
 
-export default class LogInOverLay extends React.Component{
-	handleLogin(e){
-		alert("You're Logged In!!!");
-		this.props.changeLoginState(true);
-	}
+export default class Brand extends React.Component{
 		
  
   render() {
@@ -24,7 +20,7 @@ export default class LogInOverLay extends React.Component{
     	</div>
     	<div className="container">
     	<div className="text-center row">
-    		<div class="col-sm-12">
+    		<div className="col-sm-12">
     		<p></p>
     		  </div>
     	</div>

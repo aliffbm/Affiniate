@@ -8,7 +8,8 @@ import {Navbar, MenuItem, Nav, NavItem, NavDropdown} from 'react-bootstrap/';
 
 
 export default class Navigation extends React.Component{
-  handleSelect(e){
+  _handle_logout(e){
+    this.props.changeLoginState(false);
   console.log(e);
 }
 
@@ -34,7 +35,7 @@ render(){
                     </NavDropdown>
                   </Nav>
                   <Nav pullRight className="navbarColor" id="navHeaderRight">
-                    <NavItem eventKey={2} id="makeWhite" href="#"><span className="glyphicon glyphicon-log-in"></span> Log Out</NavItem>
+                    <NavItem eventKey={2} id="makeWhite" href="#"><span className="glyphicon glyphicon-log-in" onClick={this._handle_logout.bind(this)}></span> Log Out</NavItem>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>

@@ -27,7 +27,10 @@ class App extends Component {
 
   showLogin(){
     this.setState({showLogin: !this.state.showLogin});
+    console.log("I was called! !");
   }
+
+
 
 
   render() {
@@ -48,7 +51,7 @@ class App extends Component {
                 </div>
     
     }else{
-      navPage = <UserNavigation/>;
+      navPage = <UserNavigation changeLoginState={this.changeLoginState.bind(this)}/>;
     }
    
 
