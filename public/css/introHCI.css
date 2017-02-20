@@ -31,13 +31,13 @@ body, #root{
      color: #ffffff;
 }
 #navbar-default-override{
-     background-color: #00afab !important;
+     
      margin-bottom: 0px;
 
 }
 .navbarColor div.container{
 
-     background-color: #00afab !important;
+    
      color: #ffffff;
 }
 
@@ -81,6 +81,48 @@ body, #root{
      border-radius: 50px;
 }
 
+#homePage{
+     background-image: url("../images/homeBackGround.jpg");
+     background-size: cover;
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     bottom: 0px;
+     left: 0px;
+}
+
+#containerHome{
+    
+}
+#innerContainerHome{
+     position: relative;
+     margin:auto;
+}
+#imageHome{
+
+     width:200px;
+     height: 200px;
+     margin:auto;
+}
+
+
+#rowHomeEmoticons{
+     margin-top: 100px;
+     padding-bottom: 20px; 
+     border-bottom: 1px solid white;
+
+
+}
+#emotiCaption{
+font-size: 20px;
+--webkit-text-stroke-width: 50px;
+   color: white;
+   text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
 #footer{
 
      background-color: black;

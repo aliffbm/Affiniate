@@ -17,7 +17,8 @@ export default class LogInOverLay extends React.Component{
     	<div className="conainer-fluid" id="bodySectionHeader">
     	<div className="text-center row">
     		<div className="col-sm-12">
-    			<h1></h1>
+    			<h1>Fostering Team Work Through Empathy</h1>
+                <hr></hr>
     		</div>
     	
     	</div>

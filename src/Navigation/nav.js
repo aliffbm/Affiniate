@@ -15,7 +15,7 @@ export default class Navigation extends React.Component{
 render(){
   return (<div>
             <Navbar className="navbar-fixed-top" fluid id="navbar-default-override" collapseOnSelect >
-                <Navbar.Header className="navbarColor">
+                <Navbar.Header className="navbarColor" id="navHeaderLeft">
                   <Navbar.Toggle className="pull-left navbarColor"/>
                    <Navbar.Brand className="navbarColor">
                     <a id="brand" href="#">AFFINIATE</a>
@@ -33,7 +33,7 @@ render(){
                       
                     </NavDropdown>
                   </Nav>
-                  <Nav pullRight className="navbarColor">
+                  <Nav pullRight className="navbarColor" id="navHeaderRight">
                     <NavItem eventKey={2} id="makeWhite" href="#"><span className="glyphicon glyphicon-log-in"></span> Log Out</NavItem>
                   </Nav>
                 </Navbar.Collapse>

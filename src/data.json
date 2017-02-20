@@ -23,29 +23,31 @@
 		{
 			"chores": [
 				{
-					"key": 1,
+					"id": 1,
 					"name": "Dishes",
 					"expectedTime": "30 min",
-					"Image": "images/sink.jpg",
-					"handler": "'this.handle1.bind(this)'"
+					"image": "images/sink.jpg",
+					"handler": "this.handle1.bind(this)"
 				},
-				{	"key": 2,
+				{	"id": 2,
 					"name": "Trash",
 					"expectedTime": "10 min",
-					"Image": "images/happy.png",
-					"handler": "'this.handle2.bind(this)'"
+					"image": "images/happy.png",
+					"handler": "this.handle2.bind(this)"
 
 				},
 				{
+					"id": 3,
 					"name": "Vacuuming",
 					"expectedTime": "45 min",
-					"Image": "images/shower.jpg",
+					"image": "images/shower.jpg",
 					"handler": "this.handle3.bind(this)"
 				},
 				{
+					"id": 4,
 					"name": "Mopping",
 					"expectedTime": "1 hr",
-					"Image": "images/laundry.jpg",
+					"image": "images/laundry.jpg",
 					"handler": "this.handle4.bind(this)"
 				}
 			]
@@ -72,23 +74,27 @@
 			"emotions": [
 				{
 					"name": "Happy",
-					"imageDir": "images/happy.jpg",
-					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Emoji_with_Eyes_Opened_large.png?v=1480481056"
+					"imageDir": "svg/happy.svg",
+					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Emoji_with_Eyes_Opened_large.png?v=1480481056",
+					"hits": 30
 				},
 				{
 					"name": "Neutral",
-					"imageDir": "images/neutral.jpg",
-					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/files/Expressionless_Face_Emoji.png?9898922749706957214"
+					"imageDir": "svg/neutral.svg",
+					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/files/Expressionless_Face_Emoji.png?9898922749706957214",
+					"hits": 4			
 				},
 				{
 					"name": "Worried",
-					"imageDir": "images/worried.jpg",
-					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/files/Worried_Face_Emoji.png?9898922749706957214"
+					"imageDir": "svg/worried.svg",
+					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/files/Worried_Face_Emoji.png?9898922749706957214",
+					"hits": 2
 				},
 				{
 					"name": "Disappointed",
-					"imageDir": "images/disappointed.jpg",
-					"imageURL": "http://www.magic-emoji.com/emoji/images/1146_emoji_iphone_slightly_frowning_face.png"
+					"imageDir": "svg/disappointed.svg",
+					"imageURL": "http://www.magic-emoji.com/emoji/images/1146_emoji_iphone_slightly_frowning_face.png",
+					"hits": 14
 				}
 			]
 		}

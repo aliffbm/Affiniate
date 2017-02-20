@@ -5,15 +5,21 @@ import '../../public/css/bootstrap-theme.css';
 import '../../public/css/chores.css'
 import Draggable from 'react-draggable';
 import data from '../data.json';
-import $ from 'jquery';
+
 
 var divStyle;
-console.log(data[1].chores[0].Image);
+
 
 //console.log("Print a string version: " + str);
 
+let theData = [];
+for(var i=0;i<data[1].chores.length;i++){
+  theData.push(data[1].chores[i]);
+}
 
+//let items = this.props.theData;
 
+//console.log(items);
 
 export default class Chores extends React.Component {
 
@@ -30,11 +36,13 @@ export default class Chores extends React.Component {
         x: -400,
         y: 200
       },
-      clicked: false
+      resultsArr: theData
     };
 
     this._bind("handleDrag");
   }
+
+
 
   _bind(...methods) {
         methods.forEach(method => this[method] = this[method].bind(this));
@@ -105,45 +113,51 @@ export default class Chores extends React.Component {
     });
   }
 
-  handleN(){
+  handle1(){
 
     alert("Neutral!!!");
   }
   
+  handle2(){
+
+    alert("Neutral!!!");
+  }
+  handle3(){
+
+    alert("Neutral!!!");
+  }
+  handle4(){
+
+    alert("Neutral!!!");
+  }
   __handleClick(){
-    console.log("Handle clicked");
-    console.log(this.props.children);
+    
+    console.log("Handle 1 clicked");
+    console.log(this);
     //console.log(data[4].emotions.length);
    
-   
-     $("#choreContainer").append('<h1 id="chooseFeeling"><ul><li><a href="#" onClick={this.handleN.bind(this)}>Happy</a></li><li><a href="#">Dissappointed</a></li><li><a href="#">Worried</a></li><li><a href="#">Neutral</a></li></ul></h1>');
   }
   render() {
-    var choreElementBox = [];
-    let j;
-    if(this.state.clicked){
-      alert("It worked?");
-      j = <div>Did it work?</div>;
-    }
+  //var choreElementBox = [];
+ 
+      var items = theData;
+    console.log(items);
+    console.log(this);
 
-    for(var i=0; i<data[1].chores.length;i++){
-      var str = JSON.stringify(data[1].chores[i].Image);
-      divStyle = {
-       backgroundImage: 'url(' + str + ')',
+    var itemsList = items.map((chore) => {
+       divStyle = {
+       backgroundImage: 'url(' + chore.image + ')',
       };
-    
+      console.log(chore.handler);
 
-     
-      choreElementBox.push( <Draggable axis="y" href="#">
-        <div className="divBigger" id="alignCenter">
-          <div className="thumb" style={divStyle}>
-         </div>
-        <h1 className="text">{data[1].chores[i].name}</h1>
-        </div>
-      </Draggable>);
+     console.log(chore.id);
+      console.log("image:  " + chore.image);
+      return(<Draggerss key={chore.id} handler={this.__handleClick.bind(this)} style={divStyle}  name={chore.name}/>);
+
+    })
 
 
-    }
+
 
     const dragHandlers = {
       onStart: this.onStart,
@@ -151,10 +165,25 @@ export default class Chores extends React.Component {
     };
 
   
-    return ( <div id="choreContainer" onClick={this.__handleClick.bind(this)}>
-    {j}
-    {choreElementBox}</div>
+    return ( <div id="choreContainer">
+
+    {itemsList}</div>
     );
 
+  }
+
+}
+
+class Draggerss extends React.Component{
+  render(){
+    return(
+      <Draggable axis="y" href="#" key={this.props.key}>
+        <div className="divBigger" id="alignCenter" onClick={this.props.handler}>
+          <div className="thumb" style={this.props.style}>
+         </div>
+        <h1 className="text">{this.props.name}</h1>
+        </div>
+      </Draggable>
+    )
   }
 }
