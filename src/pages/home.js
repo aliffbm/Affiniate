@@ -34,7 +34,7 @@ render(){
 						</div>
 					 	<div className="col-sm-10" id="size_of_task_div" style={divStyle}>
 					 	<div className="col-sm-12" id="task_text_container_header">
-					 	<h3>Your task is dishes</h3>
+					 		<h3>Your task is dishes</h3>
 					 	</div>
 					 	<div className="col-sm-12" id="task_text_container_info">
 					 	<p># of days to Complete: No.</p>
@@ -47,8 +47,7 @@ render(){
 					</div>
 					<div className="col-sm-4 text-center" id="complete_chore_btn">
 
-						<input className="btn btn-primary" type="button" value="Complete Chore" onClick={this._chore_complete.bind(this)}></input>
-											
+					<button type="button" class="btn btn-primary btn-lg raised">Compete Chore!</button>											
 					</div>
 					<div className="col-sm-12">
 					</div>

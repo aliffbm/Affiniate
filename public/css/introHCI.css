@@ -124,18 +124,14 @@ body, #root{
      padding: 0px;
 }
 #task_text_container_header{
-     background-color: #000;
-     opacity: .7;
+     text-shadow: 1px 1px 1px black;
      margin: 0px;
 }
 #task_text_container_info{
-     background-color: #fff;
+     text-shadow: 1px 1px 1px black;
      position: absolute;
      bottom:0px;
-     opacity: .8;
 }
-
-
 
 #rowHomeEmoticons{
      margin-top: 100px;
@@ -216,5 +212,15 @@ font-size: 20px;
      border-radius: 50px;
 }
 #complete_chore_btn{
-     padding: 30px;
+     color: black;
+}
+.btn-primary.raised {
+     box-shadow: 0 3px 0 0 #007299;
+}
+
+.btn-primary.raised:active, .btn-primary.raised.active {
+     background: #33a6cc;
+     box-shadow: none;
+     margin-bottom: -3px;
+     margin-top: 3px;
 }
