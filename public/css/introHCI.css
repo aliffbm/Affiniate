@@ -212,7 +212,6 @@ font-size: 20px;
      border-radius: 50px;
 }
 #complete_chore_btn{
-<<<<<<< HEAD
      color: black;
 }
 .btn-primary.raised {
@@ -224,7 +223,6 @@ font-size: 20px;
      box-shadow: none;
      margin-bottom: -3px;
      margin-top: 3px;
-=======
      padding: 30px;
 }
 
@@ -234,5 +232,4 @@ font-size: 20px;
 }
 #listImages{
      padding: 2px;
->>>>>>> ab02f9b8885405b7926f190c109f06820c8c9817
 }
