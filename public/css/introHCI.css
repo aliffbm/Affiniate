@@ -13,10 +13,11 @@ html, body{
      color: #ffffff;
 }
 #navHeaderLeft{
-     margin-left: 20px;
+     margin-left: 0px;
+     padding-left: 20px;
 }
 #navHeaderRight{
-     margin-right: 20px;
+     margin-right: 0px;
      padding-right: 20px;
 }
 #brand {
@@ -84,6 +85,7 @@ html, body{
 }
 
 #containerHome{
+     padding: 0px;
     
 }
 #innerContainerHome{
@@ -255,9 +257,15 @@ font-size: 20px;
 #holdingImages{
      padding: 0px;
 }
-#myTaskSentiment{
+#myTaskSentiment li{
      list-style-type: none;
      background-color: black;
      text-align: left;
+     border-radius: 50px;
+     margin: 4px;
+
+}
+#myTaskSentiment li img{
+     width: 40px;
 
 }

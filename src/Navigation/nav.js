@@ -3,11 +3,13 @@ import React from 'react';
 import '../../public/css/bootstrap.css';
 import '../../public/css/bootstrap-theme.css';
 import '../../public/css/introHCI.css';
+//import '../../public/css/materialize.css';
 import {Link} from 'react-router';
 import {Navbar, MenuItem, Nav, NavItem, NavDropdown} from 'react-bootstrap/';
 import {browserHistory} from 'react-router';
 import Home from '../pages/home.js';
 import Chores from '../pages/chores.js';
+
 
 
 export default class Navigation extends React.Component{

@@ -42,8 +42,8 @@ render(){
          				<div className="col-sm-5">
          				<p>When dishes are clean people...</p>
          				<ul id="myTaskSentiment">
-         					<li><img style={{width: "40px"}} src="images/happyCartWheel.png"/>Feel better</li>
-         					<li><img style={{width: "40px"}} src="images/money.png"/> Don't have to spend money to eat out</li>
+         					<li><img src="images/happyCartWheel.png"/>Feel better</li>
+         					<li><img src="images/money.png"/> Don't have to spend money to eat out</li>
          				</ul>
          				</div>
 					</div>
