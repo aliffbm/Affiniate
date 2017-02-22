@@ -32,7 +32,7 @@
 				{	"id": 2,
 					"name": "Trash",
 					"expectedTime": "10 min",
-					"image": "images/happy.png",
+					"image": "images/oven_3.jpg",
 					"handler": "this.handle2.bind(this)"
 
 				},

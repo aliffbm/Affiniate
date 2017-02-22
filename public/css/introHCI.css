@@ -221,8 +221,8 @@ font-size: 20px;
 
 #listContainer{
      position: relative;
-     top: 0px;
-     right: 0px;
-     bottom: 0px;
-     left: 0px;
+     margin-top: 100px;
+}
+#listImages{
+     padding: 2px;
 }
