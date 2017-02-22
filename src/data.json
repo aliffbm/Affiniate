@@ -73,24 +73,28 @@
 		{
 			"emotions": [
 				{
+					"key": 1,
 					"name": "Happy",
 					"imageDir": "svg/happy.svg",
 					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Emoji_with_Eyes_Opened_large.png?v=1480481056",
 					"hits": 30
 				},
 				{
+					"key": 2,
 					"name": "Neutral",
 					"imageDir": "svg/neutral.svg",
 					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/files/Expressionless_Face_Emoji.png?9898922749706957214",
 					"hits": 4			
 				},
 				{
+					"key": 3,
 					"name": "Worried",
 					"imageDir": "svg/worried.svg",
 					"imageURL": "https://cdn.shopify.com/s/files/1/1061/1924/files/Worried_Face_Emoji.png?9898922749706957214",
 					"hits": 2
 				},
 				{
+					"key": 4,
 					"name": "Disappointed",
 					"imageDir": "svg/disappointed.svg",
 					"imageURL": "http://www.magic-emoji.com/emoji/images/1146_emoji_iphone_slightly_frowning_face.png",

@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../public/css/bootstrap.css';
 import '../public/css/bootstrap-theme.css';
-import navbarInstance from './Navigation/nav.js';
 import './index';
 
 /*var Index = React.createClass({
@@ -25,11 +24,11 @@ import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 //import App from './App';
 //import NavBox from './Navigation/components';
 import './index.css';
-
-import App from './App.js';
 import Home from './pages/home.js';
 import Chores from './pages/chores.js';
-import LogIn from './pages/loginOverLay.js';
+import App from './App.js';
+
+
 import brand from './pages/brand.js';
 
 

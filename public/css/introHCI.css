@@ -105,6 +105,37 @@ body, #root{
      margin:auto;
 }
 
+#task_to_complete_home{
+    margin-top: 70px;
+    font-size: 20px;
+     --webkit-text-stroke-width: 50px;
+     color: #fff;
+       text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+     border-bottom: 1px solid #fff;
+}
+#size_of_task_div{
+     min-height: 300px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 0px;
+}
+#task_text_container_header{
+     background-color: #000;
+     opacity: .7;
+     margin: 0px;
+}
+#task_text_container_info{
+     background-color: #fff;
+     position: absolute;
+     bottom:0px;
+     opacity: .8;
+}
+
+
 
 #rowHomeEmoticons{
      margin-top: 100px;
@@ -113,16 +144,18 @@ body, #root{
 
 
 }
+
 #emotiCaption{
 font-size: 20px;
 --webkit-text-stroke-width: 50px;
    color: white;
-   text-shadow:
+     text-shadow:
    -1px -1px 0 #000,  
     1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
 }
+ 
 #footer{
 
      background-color: black;
@@ -177,4 +210,11 @@ font-size: 20px;
      padding-top: 50px;
 
 
+}
+
+#round_mytask_image{
+     border-radius: 50px;
+}
+#complete_chore_btn{
+     padding: 30px;
 }
