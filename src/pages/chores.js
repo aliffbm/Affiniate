@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import '../../public/css/bootstrap.css';
 import '../../public/css/bootstrap-theme.css';
 import '../../public/css/chores.css'
-import Draggable from 'react-draggable';
+
 
 
 import Data from '../data.json';
@@ -81,7 +81,7 @@ export default class Chores extends React.Component {
       };
       
       
-      return(<Draggers key={chore.id} handler={this.__handleClick.bind(this)} style={divStyle}  name={chore.name}/>);
+      return(<div></div>);
 
     })
 
