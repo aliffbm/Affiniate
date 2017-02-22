@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import '../../public/css/bootstrap.css';
 import '../../public/css/bootstrap-theme.css';
-import '../../public/css/chores.css'
+import '../../public/css/chores.css';
+import '../../public/css/introHCI.css'
 
 
 
@@ -22,7 +23,7 @@ const SortableItem = SortableElement(({value}) => <div>{value}</div>);
 
 const SortableList = SortableContainer(({items}) => {
     return (
-        <div>
+        <div className="container text-center" id="listContainer">
           <ul>
             {items.map((value, index) =>
                 <SortableItem key={`item-${index}`} index={index} value={value} />
@@ -47,6 +48,11 @@ export default class choresP extends Component {
         )
     }
 }
+
+
+
+
+
 /*
 var divStyle;
 

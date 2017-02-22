@@ -218,3 +218,11 @@ font-size: 20px;
 #complete_chore_btn{
      padding: 30px;
 }
+
+#listContainer{
+     position: relative;
+     top: 0px;
+     right: 0px;
+     bottom: 0px;
+     left: 0px;
+}
