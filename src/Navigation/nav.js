@@ -18,6 +18,7 @@ export default class Navigation extends React.Component{
       log: "Log In",
       path: "home",
       isLoggedIn: false,
+      signup: "Sign Up"
 
     }
   }
@@ -29,11 +30,13 @@ handle(e){
         if(this.state.isLoggedIn == false){
           this.setState({log: "Log Out"});
           this.setState({isLoggedIn: true});
+          this.setState({signup: ""});
           this.setState({path: "/"});
         }
         else if(this.state.isLoggedIn == true){
           this.setState({log: "Log In"});
           this.setState({isLoggedIn: false});
+          this.setState({signup: "Sign Up"});
           this.setState({path: "home"});
 
         }
@@ -53,7 +56,7 @@ _getSignedInNav(){
 }
 
 _getSignedIn(){
-  return(<StateChangeNav handle={this.handle.bind(this)} path={this.state.path} log={this.state.log}/>);
+  return(<StateChangeNav handle={this.handle.bind(this)} path={this.state.path} log={this.state.log} signup={this.state.signup}/>);
 }
 
  
@@ -111,8 +114,8 @@ function StateChangeNav(props){
  
     return(
       <Nav pullRight className="navbarColor" id="navHeaderRight">
-        <NavItem eventKey={1} id="makeWhite" href="#"><span className="glyphicon glyphicon-user"></span> Sign Up</NavItem>
-        <NavItem eventKey={2} id="makeWhite" href="#" onClick={props.handle}><span className="glyphicon glyphicon-log-in"></span><Link to={props.path} id="makeWhite">{props.log}</Link></NavItem>
+        <NavItem eventKey={1} id="makeWhite" href="#"><span className="glyphicon glyphicon-user"></span> {props.signup}</NavItem>
+        <NavItem eventKey={2} id="makeWhite" href="#" onClick={props.handle}><span className="glyphicon glyphicon-log-in"></span><Link to={props.path} id="makeWhite">  {props.log}</Link></NavItem>
       </Nav>);
   }
 

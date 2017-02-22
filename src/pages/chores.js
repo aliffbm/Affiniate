@@ -19,16 +19,15 @@ for(var i=0;i<Data[1].chores.length;i++){
 
 
 
-const SortableItem = SortableElement(({value, value2, value3}) =><div>{value2} <img className="text-center" style={{width: "500px"}} id="listImages" src={value}></img>{value3}</div>);
+const SortableItem = SortableElement(({value1, value2, value3}) =><li id="imageList" style={{backgroundImage: 'url('+value1+')'}}><div>{value2} {value3}</div></li>);
 
 const SortableList = SortableContainer(({items}) => {
     return (
-        <div className="container">
-          <ul>
+        <div className="container" id="holdingImages">
+          <ul id="imageItems">
             {items.map((value, index) =>
-              <div className="container">
-                <SortableItem key={`item-${index}`} index={index} value={value.image} value2={value.name} value3={index + 1}/>
-              </div>
+                <SortableItem key={`item-${index}`} index={index} value1={value.image} value2={value.name} value3={index + 1}/>
+            
             )}
           </ul>
         </div>
@@ -46,8 +45,10 @@ export default class chores extends Component {
     };
     render() {
         return (
-          <div className="container text-center" id="listContainer">
+          <div className="container-fluid text-center" id="listContainer">
+            <div className="container" id="nestedListContainer">
             <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />
+            </div>
           </div>
         )
     }

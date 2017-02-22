@@ -1,19 +1,11 @@
-div, p, html{
+html, body{
 	margin: 0;
-	padding: 0;
+	height: 100%;
 }
 
 
 
-body, #root{
-     position: absolute;
-     top: 0px;
-     right: 0px;
-     bottom: 0px;
-     left: 0px;
-     padding: 20px;
 
-}
 
 .navbarColor{
 
@@ -228,8 +220,44 @@ font-size: 20px;
 
 #listContainer{
      position: relative;
-     margin-top: 100px;
+
+     top: 0px;
+     right: 0px;
+     bottom:0px;
+     left:0px;
+     background-color: #b3e5fc;
+     padding-top: 125px;
+     padding-bottom: 125px;
+     background-size: cover;
 }
-#listImages{
-     padding: 2px;
+#nestedListContainer{
+     margin-top: 0px;
+     margin-bottom: 0px;
+     background-color: #fff;
+     padding: 0px;
+     opacity: .8;
+}
+#imageList{
+     font-size: 30px;
+     color: white;
+     padding: 100px;
+     min-height: 225px;
+     margin: 4px;
+     background-size: cover;
+     background-repeat: none;
+}
+
+#imageItems{
+     list-style-type: none;
+     padding:5px;   
+     margin: 0px; 
+}
+#holdingImages{
+     padding: 0px;
+}
+#myTaskSentiment{
+     list-style-type: none;
+     background-color: black;
+     text-align: left;
+
 }
