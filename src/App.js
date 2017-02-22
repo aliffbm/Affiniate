@@ -38,7 +38,7 @@ class App extends Component {
  
 
   render() {
-    let navBar = <Navigation changeLoginState={this.changeLoginState.bind(this)}/>;
+    let navBar = (<Navigation changeLoginState={this.changeLoginState.bind(this)}/>);
     let brand;
     let showLoginElem;
 
