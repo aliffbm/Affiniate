@@ -54,8 +54,9 @@ export default class chores extends Component {
           <br/>
           <br/>
           </div>
-          <img className="text-center" style={{width: "60px"}} src="images/lock_open.png"/>
+          
           <div className="container-fluid text-center" id="listContainer">
+          <img className="text-center" style={{width: "60px"}} src="images/lock_open.png"/>
             <div className="container" id="nestedListContainer">
             <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />
             {console.log("Hello")}

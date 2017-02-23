@@ -101,7 +101,7 @@ html, body{
 
 #task_to_complete_home{
     margin-top: 70px;
-    font-size: 20px;
+    font-size: 18px;
      --webkit-text-stroke-width: 50px;
      color: #fff;
        text-shadow:
@@ -268,4 +268,27 @@ font-size: 20px;
 #myTaskSentiment li img{
      width: 40px;
 
+}
+
+#myTaksSentiment li{
+     font-size: 20px;
+}
+
+@media screen and (max-width: 1248px){
+     #myTaskSentiment li{
+     font-size: 15px;
+     
+     }
+}
+@media screen and (max-width: 968px){
+     #myTaskSentiment li{
+     font-size: 13px;
+     
+     }
+}
+@media screen and (max-width: 568px){
+     #myTaskSentiment li{
+     font-size: 5px;
+
+     }
 }
