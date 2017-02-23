@@ -36,27 +36,35 @@ const SortableList = SortableContainer(({items}) => {
 
 export default class chores extends Component {
     state = {
-        items: [choreItems[0], choreItems[1], choreItems[2], choreItems[3]]
+        items: [choreItems[0], choreItems[1], choreItems[2], choreItems[3]],
+        lock: "images/lock_open.png",
+        isLocked: false
     }
     onSortEnd = ({oldIndex, newIndex}) => {
         this.setState({
             items: arrayMove(this.state.items, oldIndex, newIndex)
         });
     };
+
+    handleLock(e){
+      if(!this.state.isLocked)
+        this.setState({lock: "images/lock_closed.png"});
+      else
+        this.setState({lock: "images/lock_open.png"});
+
+      this.setState({isLocked: !this.state.isLocked})
+    }
     render() {
         return (
           <div>
           <div className="container-fluid">
           <br/>
           <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+        
           </div>
           
           <div className="container-fluid text-center" id="listContainer">
-          <img className="text-center" style={{width: "60px"}} src="images/lock_open.png"/>
+          <img className="text-center" style={{width: "60px"}} onClick={this.handleLock.bind(this)} src={this.state.lock}></img>
             <div className="container" id="nestedListContainer">
             <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />
             {console.log("Hello")}
