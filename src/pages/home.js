@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import Data from '../data.json';
 import '../../public/css/introHCI.css';
-import $ from 'jquery'
+
 
 
 var assignedTaskImage = Data[1].chores[0].image;
