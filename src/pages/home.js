@@ -2,31 +2,57 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import Data from '../data.json';
 import '../../public/css/introHCI.css';
+import $ from 'jquery'
 
+
+var assignedTaskImage = Data[1].chores[0].image;
 export default class Home extends React.Component{
 
-_chore_complete(){
-	alert("Chore Completed!");
-}
+	constructor(){
+		super(); 
+		this.state = {
+			isCompleted: false,
+			theData: {}
+		}
+	}
+
+	chore_complete(){
+		alert("Chore Completed!");
+
+
+		this.setState({isCompleted: true});
+
+	}
+
+	
 
 render(){
 	let images = [];
 
 	for(var i=0;i<Data[3].emotions.length;i++)
 	{
-		console.log(Data[3].emotions[i].imageDir);
 		images.push(<div key={Data[3].emotions[i].key} className="col-sm-3 text-center"><img id="imageHome" src={Data[3].emotions[i].imageDir}></img><figcaption id="emotiCaption"><strong>{Data[3].emotions[i].name} Hits: {Data[3].emotions[i].hits}</strong></figcaption></div>);
 	}
 
-	const divStyle = {
-		backgroundImage: 'url('+Data[1].chores[0].image+')',
+	
+	var divStyle;
+	if(this.state.isCompleted){
+		divStyle = {
+			backgroundColor: "#fff",
+		}
+	}else{
+
+		divStyle = {
+		backgroundImage: 'url('+assignedTaskImage+')',
 	};
+	}	
 
 	return(
 
 
 		<div className="container-fluid" id="homePage">
 
+}
 			<div className="container" id="containerHome">
 				<div className="row" id="task_to_complete_home">
 					<div className="col-sm-12 text-center">
@@ -51,7 +77,7 @@ render(){
 					</div>
 					<div className="col-sm-3 text-center" id="complete_chore_btn">
 
-					<button type="button" className="btn btn-primary btn-lg raised">Compete Chore!</button>											
+				<button type="button" className="btn btn-primary btn-lg raised" onClick={this.chore_complete}>Compete Chore!</button>											
 					</div>
 					<div className="col-sm-7">
 					</div>

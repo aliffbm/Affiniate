@@ -8,8 +8,7 @@ var choreItems =[];
 for(var i=0;i<Data[1].chores.length;i++){
   choreItems[i] = Data[1].chores[i];
 }
-console.log("Im a negro");
-console.log(choreItems);
+
 
 
 const SortableItem = SortableElement(({value}) => <div>{value}</div>);

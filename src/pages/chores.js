@@ -47,12 +47,23 @@ export default class chores extends Component {
     };
 
     handleLock(e){
-      if(!this.state.isLocked)
+      if(!this.state.isLocked){
         this.setState({lock: "images/lock_closed.png"});
-      else
+        alert("Chores Saved");
+      }
+      else{
         this.setState({lock: "images/lock_open.png"});
-
+        alert("Chores Not Saved");
+      }
+      
       this.setState({isLocked: !this.state.isLocked})
+
+    }
+    handleAdd(e){
+        alert("Chore Added");
+      }
+    handleEmoticomment(e){
+      alert("Emoticomment Added");
     }
     render() {
         return (
@@ -64,9 +75,15 @@ export default class chores extends Component {
           </div>
           
           <div className="container-fluid text-center" id="listContainer">
-          <img className="text-center" style={{width: "60px"}} onClick={this.handleLock.bind(this)} src={this.state.lock}></img>
+          <div className="container">
+          <img className="text-right" style={{width: "60px", float:"left"}} onClick={this.handleEmoticomment.bind(this)} src="svg/comment.svg"></img>
+          <img className="" style={{width: "60px"}} onClick={this.handleLock.bind(this)} src={this.state.lock}></img>
+          <img className="text-right" style={{width: "60px", float:"right"}} onClick={this.handleAdd.bind(this)} src="svg/add.svg"></img>
+          </div> 
             <div className="container" id="nestedListContainer">
-            <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />
+            <SortableList lockAxis={"y"}
+            pressDelay={200}
+            items={this.state.items} onSortEnd={this.onSortEnd} />
             {console.log("Hello")}
             </div>
           </div>
