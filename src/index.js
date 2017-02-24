@@ -26,6 +26,7 @@ import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 import './index.css';
 import Home from './pages/home.js';
 import Chores from './pages/chores.js';
+import Stats from './pages/stats.js';
 import App from './App.js';
 
 
@@ -41,6 +42,7 @@ ReactDOM.render(  <Router history={hashHistory}>
   		<IndexRoute component={brand}></IndexRoute>
   		<Route path="home" component={Home}></Route>
   		<Route path="chores" component={Chores}></Route>
+      <Route path="stats" component={Stats}></Route>
   	</Route>
   </Router>
 ,

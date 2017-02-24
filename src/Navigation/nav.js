@@ -9,6 +9,7 @@ import {Navbar, MenuItem, Nav, NavItem, NavDropdown} from 'react-bootstrap/';
 import {browserHistory} from 'react-router';
 import Home from '../pages/home.js';
 import Chores from '../pages/chores.js';
+import Stats from '../pages/stats.js';
 
 
 
@@ -105,11 +106,8 @@ class NavSignedIn extends React.Component{
     return(<Nav>
       <NavItem className="navbarColor" eventKey={1} href="#"><Link to="home" id="makeWhite"> Home</Link></NavItem>
       <NavItem className="navbarColor" eventKey={2} href="#"><Link to="chores" id="makeWhite"> Chores</Link></NavItem>
-      <NavDropdown eventKey={3} title="Dropdown" id="makeWhite" className="navbarColor">
-          <MenuItem className="navbarColor" id="makeWhite" eventKey={3.1}>Action</MenuItem>
-          <MenuItem className="navbarColor" id="makeWhite" eventKey={3.2}>Another action</MenuItem>
-          <MenuItem className="navbarColor" id="makeWhite" eventKey={3.3}>Something else here</MenuItem>
-      </NavDropdown></Nav>);
+      <NavItem className="navbarColor" eventKey={3} href="#"><Link to="stats" id="makeWhite"> Stats</Link></NavItem>
+         </Nav>);
   }
 }
 function StateChangeNav(props){
