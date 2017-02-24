@@ -105,11 +105,7 @@ class NavSignedIn extends React.Component{
     return(<Nav>
       <NavItem className="navbarColor" eventKey={1} href="#"><Link to="home" id="makeWhite"> Home</Link></NavItem>
       <NavItem className="navbarColor" eventKey={2} href="#"><Link to="chores" id="makeWhite"> Chores</Link></NavItem>
-      <NavDropdown eventKey={3} title="Dropdown" id="makeWhite" className="navbarColor">
-          <MenuItem className="navbarColor" id="makeWhite" eventKey={3.1}>Action</MenuItem>
-          <MenuItem className="navbarColor" id="makeWhite" eventKey={3.2}>Another action</MenuItem>
-          <MenuItem className="navbarColor" id="makeWhite" eventKey={3.3}>Something else here</MenuItem>
-      </NavDropdown></Nav>);
+     </Nav>);
   }
 }
 function StateChangeNav(props){

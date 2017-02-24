@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
-//import ReactDom from 'react-dom';
-//import logo from './logo.svg';
+
 import './App.css';
 import '../public/css/introHCI.css';
 
-//import {Link} from 'react-router';
-//import Header from './header.js';
-//import navi from './Navigation/nav.js';
 import Navigation from './Navigation/nav.js';
 
 import LogInOverLay from './pages/loginOverLay.js';
-//import Footer from './pages/footer.js';
+
 import ListItem from './pages/choresP.js';
-//import Testfetch from './pages/testFileFetch.js';
+//import Fetch from '../../node_modules/react-fetch/build/react-fetch';
 
 
 class App extends Component {

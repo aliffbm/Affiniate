@@ -18,10 +18,7 @@ export default class Home extends React.Component{
 
 	chore_complete(){
 		alert("Chore Completed!");
-
-
 		this.setState({isCompleted: true});
-
 	}
 
 	

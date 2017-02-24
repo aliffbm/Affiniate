@@ -7,9 +7,9 @@
  */
 
 
-var data = require('../src/data.json');
+var data = require('../src/chores.json');
 
 exports.view = function(req, res){
-  res.json(data[1]);
+  res.json(data);
 };
 
