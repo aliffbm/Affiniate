@@ -12,7 +12,7 @@ import Navigation from './Navigation/nav.js';
 import LogInOverLay from './pages/loginOverLay.js';
 //import Footer from './pages/footer.js';
 import ListItem from './pages/choresP.js';
-import Testfect from './pages/testFileFetch.js';
+import Testfetch from './pages/testFileFetch.js';
 
 
 class App extends Component {
@@ -58,7 +58,7 @@ class App extends Component {
 
     
 {this.props.children}
-<Testfect/>
+<Testfetch/>
    </div> );
   }
 }
