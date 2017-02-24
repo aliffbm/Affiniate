@@ -75,7 +75,7 @@ html, body{
 }
 
 #homePage{
-     background-image: url("../images/homeBackGround.jpg");
+     background-color: #b3e5fc;
      background-size: cover;
      position: absolute;
      top: 0px;

@@ -4,6 +4,7 @@ import '../public/css/bootstrap.css';
 import '../public/css/bootstrap-theme.css';
 import './index';
 
+
 /*var Index = React.createClass({
   render(){
     return <div>
@@ -27,17 +28,15 @@ import './index.css';
 import Home from './pages/home.js';
 import Chores from './pages/chores.js';
 import Stats from './pages/stats.js';
+
 import App from './App.js';
-
-
 import brand from './pages/brand.js';
 
 
 
 
-
 //console.log(data);
-ReactDOM.render(  <Router history={hashHistory}>
+ReactDOM.render(<Router history={hashHistory}>
   	<Route path="/" component={App}>
   		<IndexRoute component={brand}></IndexRoute>
   		<Route path="home" component={Home}></Route>
